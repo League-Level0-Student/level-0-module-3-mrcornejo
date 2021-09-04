@@ -1,4 +1,3 @@
-//(I can't save)
 package _01_else_if._3_high_low;
 
 import java.util.Random;
@@ -10,11 +9,13 @@ public class HighLowGame {
 		
 		int random = new Random().nextInt(5);//What is .nextInt(5)
 	
-		int random = m;
+		Random m = new Random();
 		// 2. Print out the random variable above
 		Random.out.print();
-		// 11. Repeat steps 1 to 10 ten times?(idk)
-		//for(int m = 1; m <= 10; m++);
+		
+		// System.out.println(//variable// Hint: r...m);
+		// 11. Repeat steps 1 to 10 ten times?
+		for(int n = 1; n <= 10; n++); // { }
 			// 1. Ask the user for a guess using a pop-up window, and save their response 
 
 			// 4. Convert the users’ answer to an int (Integer.parseInt(string))
@@ -37,5 +38,6 @@ public class HighLowGame {
 	}
 
 }
+
 
 
