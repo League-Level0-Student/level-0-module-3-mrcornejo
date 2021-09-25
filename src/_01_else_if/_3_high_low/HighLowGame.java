@@ -1,4 +1,12 @@
-//(I can't save)i already finished but my work didn't save
+
+// questionss?  ready to do the next program?
+
+// I think this is done ... if you're ok that the user
+// gets up to 3 tries.  Want to run the program to test?
+// do you understand how the code works?yes
+// are you ok with the fact that it prints the random number?
+// it makes the game easy!!!
+
 // i saved it for you.  i'll put back the code you did...
 // but i don't think it's finished.  hold on a moment while i paste
 // in your code....
@@ -34,7 +42,16 @@ public class HighLowGame {
 
 		// you can run the program and see below what number is generated.  i'm going to check in with zach, then come
 		// back to help you save your code
-		System.out.println(random);
+		
+//		System.out.println(random);
+		
+		// want to comment this line out and play again?
+		// ... up to you what line  44..like do the hihj
+		//low game again
+		// so, right now the program tells you the secret
+		// number before you start guessing ... that's
+		// no fair!  let me comment it out and i'll run it ok?
+		
 		// 2. Print out the random variable above  
 
 		// 11. Repeat steps 1 to 10 ten times?
@@ -64,13 +81,14 @@ public class HighLowGame {
 		// sense?
 		
 		// 
-		for(int m = 1; m <= 3; m++) {
+		for(int m = 1; m <= 8; m++) {
 	// line 69 doesn't make sense, it's saying if the
 			// user gueesses the number 3...not if the
 			// user made 3 wrong guesses.ok 
 			// 1. Ask the user for a guess using a pop-up window, and save their response 
 			String user = JOptionPane.showInputDialog("Guess a number between 1 and 100");	// make sense?
 
+			
 			// 4. Convert the users\u2019 answer to an int (Integer.parseInt(string))...what did you name the string?
 			// on line 21 user.  good.  now i'd give the int a more descriptive name.  it's their guess.?
 			// do you understand the HighLowGame that you are working on?no  guess a secret number between 1 and 100,etc
@@ -142,7 +160,13 @@ public class HighLowGame {
 		} // here is the end of the for loop
 		
 		// put 'you lose' here:
-		System.out.print("You lose");
+		System.out.println("You lose");
+		System.out.println("The number is " + random);  // I'll print it out
+				// at the end to see what it really was
+		
+		// do you want the user to have 3 chances or 
+		// maybe more?  how would you changee the code to
+		// give more chance?
 	}
 
 }
