@@ -8,10 +8,18 @@
 // save this somewhere for next time!saved
 // i'm back
 
+// you finished this and I saved a copy of your code.  can
+// i paste that ok?yes
+
+// can i paste your code back in here
 
 package _01_else_if._4_are_you_happy;
 
 import javax.swing.JOptionPane;
+
+// i want to test that this works now...ok good.  time
+// to go to next assignment.  but first can you log
+// onto github to create a new temp token?ok
 
 public class AreYouHappy {
 
@@ -62,7 +70,7 @@ public class AreYouHappy {
 		//idk but i do know that i need to separate 
 		
 		String answer = JOptionPane.showInputDialog("Are You Happy?");
-//		String answer;
+//here's where your code starts - it asks are you happy
 		
 		// now lets improve some things here.
 		// the 'double equals' sign tests just one thing
@@ -93,16 +101,77 @@ public class AreYouHappy {
 		// look above.
 		
 		// time to save work
-		
+//look over this code and see if you can figure out the
+		// problem ...  want help? yes please
+		// first, do you want to look at the Recipe chart
+		// again? sometimes, the code should ask a 2nd
+		// question "do you want to be happy?".  your
+		// code never allows the user to answer that question.
+		// instead, it just uses the answer to the 1st
+		// question...
+		// you need another JOptionPane kind of code
 		if (answer.equals("yes"))
 			System.out.println("Keep doing whatever your doing");
-
-		else if (answer.equals("no"))
+		else if (answer.equals("no")) {
+			answer = JOptionPane.showInputDialog("Do you want to be happy?");
+//ok we need more code inside here to process the answer
+			// to the 2nd question .. any ideas?
+			if (answer.equals("yes"))	// what should you say?
+				System.out.println("Change something");// good. what if answer no?
+			else if (answer.equals("no"))
+				System.out.println("Keep doing whatever your doing");
+			// ok let me clean up the indentation and we'll try it
+			// out and then save work
+		
+		}
+		// does this make sense? so answer is going to be the
+		//one asking questions?  well, I guess so.  the
+		// way I'd describe it is that answer saves the
+		// user's response to the question.  you can
+		// reuse answer (like reusing the memory button
+		// on a calculator) to save the answer to the
+		// latest question being asked.  when the
+		// 2nd question is asked, the code replaces what
+		// was in answer from the 1st question and saves
+		// the answer to the 2nd question.  understand?yes
+		
+//YAY it works!  ready to save2? yes
+		
+		
+//but now here it asks that same question again!....
+		// instead, you should ask a different question...
+		// "do you want to be happy"
+		// ggod.  does the chart ALWAYS say to ask that
+		// question?  or only if you answer the first question
+		// in a particular way?  yeah, if you say "no" to
+		// "are you happy"
+//		answer = JOptionPane.showInputDialog("Do you want to be happy?");
+//want to run the code to see what it does?
+		// how many times did it ask are you happy?
+		//2  is that what the chart says?2 or 3 if we count the yes
+		
+		// " or 3 if we count the yes" ... hmm, I don't see
+		// that.  the chart says just once.
+		
+		// let me explain.  you have a variable called 'answer'.
+		// a variable needs to be "declared" ONCE and then
+		// can be reused multiple times.  To "declare" means
+		// to say what data type it is.  "answer" is data
+		// type "String".  You've said that twice.  let
+		// me show you.  to fix this, either:
+		// (1) remove the word "String on line 109 or
+		// (2) give a new variable name like "answer2"
+		// what do you wwat to do?  1 or 2?
+		
+		// no longer need this:
+		/*
+		if (answer.equals("no"))
 			System.out.println("Do you want to be happy?");
-				if(answer.equals("no"))
+				else if(answer.equals("no"))
 					System.out.println("Keep doing whatever you doing.");
 						else if(answer.equals("yes"));
 							System.out.println("Change something.");
+							*/
 		
 		}
 		
