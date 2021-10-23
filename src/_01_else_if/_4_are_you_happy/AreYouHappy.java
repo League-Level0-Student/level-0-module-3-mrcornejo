@@ -1,4 +1,9 @@
 // continue next time.  fix code to ask 2nd question if
+//its finished?  YES.  looks like it didn't save the
+// final version.  i may have saved it in my computer as
+// an alternative.  i'll look.  meanwhile, go on to
+// 'own adventure'
+
 // needed
 
 // did you save your temp token from github?  if not
@@ -16,10 +21,6 @@
 package _01_else_if._4_are_you_happy;
 
 import javax.swing.JOptionPane;
-
-// i want to test that this works now...ok good.  time
-// to go to next assignment.  but first can you log
-// onto github to create a new temp token?ok
 
 public class AreYouHappy {
 
