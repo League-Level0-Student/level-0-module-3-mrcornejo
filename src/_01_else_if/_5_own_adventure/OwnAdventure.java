@@ -26,8 +26,8 @@ public class OwnAdventure {
 		// and what if they say no?
 	// CAN YOU FINISH the pseudocode below to include this part?
 		//which holiday do you prefer halloween or easter?
-		where in pseudocode is no i dont like xmas
-		should you ask this question? no
+		//where in pseudocode is no i dont like xmas
+		//should you ask this question? no
 		// great choices.  so if they answer halloween,
 		// what message should your code print out?
 		//halloween is a fun and a time to be crazy with costumes 
@@ -35,14 +35,16 @@ public class OwnAdventure {
 		//easter reminds me of pastel colors
 // I'll put Q when it should ask a question and M to output a 
 		//message
-//************ PSEUDOCODE SECTION **********/
+//************ PSEUDOCODE SECTION start **********/
 				// next class you can work on making sure
 				// code down below matches this pseudocode
 				// ok?yes
 				// let me help you save work i saved a
 				// temp token password from last time.
 				// also fixing are you happy
-				
+		
+		/*********
+		STOP theres an easier way to comment out a wholee section :)
 		ans1 = Q: like xmas?
 		if yes {	// yes i like xmas
 			M: me too, I believe it can be a holiday that ..
@@ -63,7 +65,13 @@ public class OwnAdventure {
 				M: easter reminds me of pastel colors
 			}
 		}
-//************ PSEUDOCODE SECTION **********/
+		*********/
+		
+		// i helped you write this pseudocode last week..now
+		// i'd like to see if you understand it or have any questions.
+		// and then see if you can match up the real code below such
+		// that it follows your pseudocode (which is an outline).  ok?ok
+//************ PSEUDOCODE SECTION end **********/
 		
 		
 		// ok great plan Miranda!  This is often what a
@@ -79,14 +87,52 @@ public class OwnAdventure {
 		// and showInputDialog, which returns a response
 		// from the user.  what do we want to use here?message
 		// so you don't want a response from the user??
-		// then what is 'answer'?ooo..so inoutDialog shows message and requests a responce 
+		// then what is 'answer'?ooo..so inputDialog shows message and requests a responce 
 		
-		 	
-		String answer = JOptionPane.showInputDialog("Do you like Christmas");
-		if (answer.equals("yes"))
+	// let's make sure the curly braces match  .. hmm. braces on line 90 and 100 need to be a pair but
+		// they're not
+		// see how that fixed things?  curly braces are really important here
+		
+		// I am sorry but could I save and be done for today... my mom needs to go somewhere an yes
+		
+		String answer = JOptionPane.showInputDialog("Do you like Christmas?");
+		if (answer.equals("yes")) {
 			System.out.println("Me too, I believe it can be a holiday that brings families together.");
-		else if (answer.equals("no"))
-			System.out.println("which holiday do you prefer halloween or easter?");
+			String answer2 = JOptionPane.showInputDialog("Are you goint to visit family?");
+			// in the code just below, test answer2, NOT answer
+			if (answer2.equals("yes")) {  // this line is missing an open curly brace!
+				System.out.println("Hope you have a safe trip and most of all have fun!");
+			}
+			else if (answer2.equals ("no")) {	// yeah!  this code is done.
+				System.out.println("Well hope you have fun!!");		// all is good except this never happened why?
+				// i see a slight problem...do you?no  when you asked 'going to visit family?' what is the
+				// exact name of the variable that you saved the response in?the 2  it's on line 98  
+				// what is the name of the variable on line 98?  answer2  good.  now when you did the if-else
+				// starting on line 99,
+				// is THAT the variable you tested?no  do you understand that the if-else starting on line 99
+				// should be testing the response you stored in answer2?  but instead it's testing the response
+				// you stored in answer (do you like xmas).  do you see the problem and how to fix it?
+		}
+	}// end "if you DO like christmas
+		else {	// if DONT like cristmas:
+			String answer3 = JOptionPane.showInputDialog("Which holiday do you prefer halloween or easter?");  // is this saving the response??idk
+			// identify another line above that asks a question and saves the response...OF REAL CODE, not pseudocode idr
+// look at line 95 or 98 above.  the code asks a question and saves the response in a variable.  good!
+			// but line 107 just prints out a question and has no way to save a response
+			// you still there?sorry i was kicked out...the internet was weak  no prob
+			// are you here?
+			// looks like I lost you in zoom...
+			if (answer3.equals("halloween")) {	// now fix the stuff inside the parentheses...
+				System.out.println("Halloween is a fun and a time to be crazy with costumes");
+			}
+			else {
+				System.out.println("Easter reminds me of pastel colors");
+			}
+			
+			//i dont know   which 'else' is this in the pseudocode? )
+		}
+		//else if (answer.equals("no"))
+			//System.out.println("which holiday do you prefer halloween or easter?");
 	
 		//i need a bit of help on this.  can you
 		// describe the problem? when i put which holiday do 
@@ -108,12 +154,12 @@ public class OwnAdventure {
 		// 'answer gets the value returned by the
 		// showInputDialog() method'.  now look at the line
 		// just below ... is the response being saved? good
-		String answer2 = JOptionPane.showInputDialog("Are you goint to visit family"); 
+		//String answer2 = JOptionPane.showInputDialog("Are you goint to visit family"); 
 
-		if (answer2.equals("yes"))
-			System.out.println("Hope you have a safe trip and most of all have fun!");
-			else if (answer.equals ("no"))
-			System.out.println("Well hope you have fun!!");
+		//if (answer2.equals("yes"))
+			//System.out.println("Hope you have a safe trip and most of all have fun!");
+			//else if (answer.equals ("no"))
+			//System.out.println("Well hope you have fun!!");
 
 		
 	} // close main()
