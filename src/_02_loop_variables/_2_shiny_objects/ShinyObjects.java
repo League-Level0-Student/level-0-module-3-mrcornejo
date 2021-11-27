@@ -31,7 +31,8 @@ public class ShinyObjects {
 		
 		// 3. Play the sound that many times
 
-
+// hmm i think this asssignment is no fun because you can't 
+		// play the sound.... want to go on to the next one?ok
 	}
 
 	/********************   Use this method. DON'T CHANGE THE CODE BELOW  ***********************/
