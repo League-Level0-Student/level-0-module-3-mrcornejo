@@ -5,7 +5,7 @@ public class YearsAlive {
 	
 	// questions?
 	
-	Joption.showmessagedialog (How many years do you have on earth.")
+//	JoptionPane.showmessagedialog (How many years do you have on earth.");
 }
 /*
 yes and the internet is slow making my screan glitch im trying so sorry
@@ -18,6 +18,6 @@ ok sorry to hear.  for my info, is the computer you are using today one that has
 		what year were you born?  i was born in 1960.  so if I was making this YearsAlive
 				code, it would print all the years from 1960 to 2021.
 				can you try writing the code?2006_---------------------------------
-/
+*/
 // you don't have to ask the user anything ... you can just print the years you personally have 
 // have been alive.  questions?

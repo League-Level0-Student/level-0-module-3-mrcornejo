@@ -1,4 +1,5 @@
-// CONTINUE NEXT CLASS
+// DONE
+
 
 package _02_loop_variables._3_robot_walk_of_fame;
 
@@ -14,28 +15,60 @@ public class WalkOfFame {
 		// for example, when i say 'for (10 times)
 		// real code might look like this: for(int i = 1; i <=1-; i++)
 		
-		// so what concepts are missing? idk moving places bc
-		//it makes a star in the same place
-		// yes.  and when it moves to a new place, 
-		// should it draw that move?no so move, then pen down.
-		//once done . wyietsh star pen up, move, so on....
-		// yes, so since class is almost over, lets just
-		// put a comment in the code for this and save work...
-		// where does the comment go "move to next place"
-		// not sure? i'll show you.  ok? 
-		// can i help you save your work?ye
+		// YAY!!! so what did you learn from this program?to be more carful about
+		//loops because they can change the whole thing, how to use 
+		//the turns, move, etc. great!
 		
+		// ok before going to the next program, can i fix the syntax error
+		// in yearalive?  so it doesn't keep complaining when you run codeok
+		// ready for next program? yes
 		rob.setSpeed(40);
-		for (int e=1; e<=10; e++) {
-			for (int p=1; p<=5; p++) { 
+		rob.turn(270);
+		rob.move(400);
+		rob.turn(90);
+		for (int e=1; e<=10; e++) {	// for 10 times (10 stars)
+			for (int p=1; p<=5; p++) { // for 5 times (5 sides in a star)
+				// draw one star:
+				
 				rob.penDown();
-				rob.move(100);	// my pseudocode
-				// said move forward a line length 100
-				// good ... somewhere you *should* put
-				// the pen down so it draws
+				rob.move(100);	// the code is making ONE SIDE of a star
 				rob.turn(144);
+				//can i make rob stop after one starso that it can move
+				//because when I put move it moves the lines of the star
+				// that's because you haven't found the correct place
+				// in the code to put the move :)oooo ok
 			}
-			// pick pen up here and move to next place
+			// ON E MOMENT.  lets pretend youre a robot.  stand up and
+			// face your computer.  then turn right 90 degrees.  then
+			// take one step forward.  NOW .. what do you needd to do
+			// to face in the direction of your computer again?
+			// it was almost correct!  2 slight problems
+			// pick pen up first
+			// Here:
+			//im thinking here but this is as well part of a loop, meaning
+			//it would torn back to another star and draw on top of it 
+			// so that won't work right!yes...idk  it should happen *before*
+			// any of the loops - it's a one-time action to take before
+			// drawing the 10 stars - make sense?
+				rob.penUp();
+				rob.turn(90);
+				rob.move(100);
+				rob.turn(270);
+			// it goes here:
+				rob.penUp();
+				
+				// good. now where should you put code that shifts
+				// the start of the drawing to the left side of the screen?
+				// remember your code has 2 loops.  its important to
+				// understand where this shift code goes.  what do you think?
+				
+				//i can't locate the code where it makes rob look upwards
+				// sorry. i missed the last run. can you run it again?
+				// ok so when it moves its facing up.  so instead,
+				// you need to turn it right, move, then turn it up again
+				// to get ready for next star.  make sense?yes
+			
+			
 		}
 		/*
 			
