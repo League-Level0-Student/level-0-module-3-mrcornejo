@@ -1,8 +1,12 @@
 // CONTINUE NEXT CLASS
+
 // 	// the last verse is different because you ran out of bottles.
 
 // I have your github token password - shall i help you save work?yes pls
-
+//finished
+// can i run it?yes  great!  now if you want it to start
+// counting down from 99 what is the only change you need
+// to make?  great - done!
 package _02_loop_variables._4_99_bottles.bottles;
 
 public class BottleSong {
@@ -10,7 +14,7 @@ public class BottleSong {
 	public static void main(String[] args) {
 	  // use System.out.print code to print out verses of the song
 		// using a loop....
-		for(int i=4; i>=1; i--) {
+		for(int i=99; i>=1; i--) {
 			// good.  now the code for one verse goes in here
 		System.out.println(i + " bottles of beer on the wall");//here?
 		// here yes
@@ -36,6 +40,11 @@ public class BottleSong {
 		// maybe we'll try to fix this next time?  it's about time to save
 		// work.  ok?yes
 		}
+		// you can put it after the for loop is done
+		System.out.println("  No bottles of beer!" );		
+		System.out.println("  Go to the store and buy some more!" ); 
+		System.out.println("  99 bottles of beer on the wall! ");
+	
 //should i add the other verses .  you mean the other lines in a verse? yes
 	
 		//i dont remember if theres a code to make numbers smaller in a loop?
