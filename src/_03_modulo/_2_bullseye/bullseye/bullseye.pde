@@ -1,47 +1,39 @@
-
 void setup() {
  
   // set the size of your sketch use the word 'size'  make it bigger ...maybre 500 x 500?
  size (500,500);
 }
-
 void draw() {
   fill(#FF0D00);   
-  ellipse (250,250,250,250);
-  for (int i=9; i>1; i--){  // now the loop will never go in the body -ie repeats zero times
-    // want a review of for loop?yes
+  ellipse (250,250,250,250);  
+  for (int i=9; i>1; i--){  
     
-    // you have a choice to make i count up or count down.  whata do you want here?down
-    
-    // so you initially set i to 1 and you have it count down ... 0 -1 -2  -3
-    
-    // will it ever stop?  until -7  your test is i <=1 ... is 9 <= 1?  no.
-    // so now the loop will never repeat...
-    
-    // ok show me the sequence of values you want for 'i'
-    //9<1  .. so 9 8 7 6 5 4 3 2  ?yes?
-    // ok.  so the initial value is 9.  the numbers go down by 1.  the
-    // loop keeps repeating so long as the values are GREATER THAN 1.  yes? is that
-    // what you want? so then 1<9?  if you did i < 9, it would NEVER go false,
-    // which makes an infinite loop you get stuck in!
-    // no: for (i = 9; i > 1; i--)
-    
-    // ok.  better.  want to practice another example?okay
-    
-    // make a for loop that has i do the following: 1 .. 2 .. 3
-    // for(i=1; 1<4; i++)   ok this goes 1 .. 2  it doesn't go to 3 fix it good
-    // or i <= 3
-    
-    // now make a for loop that does 3 .. 2 .. 1
-    //for(i=3; i>0; i--)  ok this goes 3 .. 2 .. 1 good.  or i >= 1 is ok.
-    
-    // so both of these practice loops repeat 3 times.  sometimes all
-    // that i does is control how many times to repeat.  but sometimes
-    // it's also used for another purpose inside the loop.  like the
-    // beer bottle song.  we *needed* i to count down, not up.  make sense?yes
-    //my computers about to die.  we can save work now.  
-    
+// can we look at 'remainder' tutorial? its one of the tabs above
+// so here, if i % 2 == 0, then i is an even number or
+// if i % 2 == 1, then i is an odd number...i dont get this bc this would be i=2 
+//which is even does this make sense?
 
+// ok lets discuss this more.  let's say we have the number 9.  how many times
+// does 2 go into 9?  4.  yes.  and what is left over?  1.  that's the remainder
+// (also called modulo).  9 is an odd number.  1 will be the leftover for *any* odd number.
+// make any sense?yes  so to test for any odd number, you can test if number % 2 == 1
+// does that make sense? so i is odd yes  if (i % 2 == 1) then i is odd, yes ok
+// now, do you understand how we can use this idea to alternate red and black colors
+// for the bullseye? yes sorry i was wrong in my head i though it was a / instead of %
+// that's important.  / is the symbol to divide whereas % is the symbol to get
+// the remainder yea sorry 
+
+}
+//(x,y,w,h)
+ fill(#030303);
+ ellipse (250,250,225,225);  
+  for (int i=8; i>1; i--){
+    
+  }//is their a code in which i can -2 three times, like: (i--2);
+  
+  // i'm helpin Jay right now.  then i'll help save your work.ok 
+  
+  // now the loop will never go in the body -ie repeats zero times
 /*
 for (initial value; if this test is true do code inside loop once; update at end)
 
@@ -73,5 +65,5 @@ EX: for (i = 0; i <3; i++)
   
   //Use an if statement and modulo to alternate the color of your rings.
   
-  
+
 }
