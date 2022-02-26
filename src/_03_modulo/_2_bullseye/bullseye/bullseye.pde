@@ -27,9 +27,33 @@ void draw() {
 //(x,y,w,h)
  fill(#030303);
  ellipse (250,250,225,225);  
-  for (int i=8; i>1; i--){
-    
-  }//is their a code in which i can -2 three times, like: (i--2);
+ int size = 250;
+  for (int i=9; i>1; i--){  // for (int i = 0; i < 7; i++)
+  //no i had put 5 bc i though it would go black 4 times through the loop ok yes 
+  if (i % 2 == 1)  {  // odd number
+   fill(#FF0D00);
+  }
+ 
+  if (i % 2 == 0)
+  
+   fill (#030303); 
+   
+   ellipse (250,250,size,size);
+   size = size - 31;
+   // make the size a bit smaller for next time thru loop
+   
+   // draw an ellipse
+  }
+  
+  // each time thru the loop, (1) the size of the ellipse gets smaller and
+  // (2) we alternate fill colors between red and black
+  // the for loop has a loop control variable 'i'.  when its an odd number,
+  // you can do one color - lets say red, and then when its an even number do black
+  
+  // to test odd number: if (i % 2 == 1)
+  // to test eveen number: if (i % 2 == 0)
+  
+  //is their a code in which i can -2 three times, like: (i--2);
   
   // i'm helpin Jay right now.  then i'll help save your work.ok 
   
@@ -66,4 +90,4 @@ EX: for (i = 0; i <3; i++)
   //Use an if statement and modulo to alternate the color of your rings.
   
 
-}
+  }
