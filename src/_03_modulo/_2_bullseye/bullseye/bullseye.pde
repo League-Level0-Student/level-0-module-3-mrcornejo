@@ -29,7 +29,6 @@ void draw() {
  ellipse (250,250,225,225);  
  int size = 250;
   for (int i=9; i>1; i--){  // for (int i = 0; i < 7; i++)
-  //no i had put 5 bc i though it would go black 4 times through the loop ok yes 
   if (i % 2 == 1)  {  // odd number
    fill(#FF0D00);
   }

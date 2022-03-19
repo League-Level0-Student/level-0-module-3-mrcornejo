@@ -8,9 +8,9 @@ package _03_modulo._4_fizz_buzz;
 * In this project, we're going to build FizzBuzz. It's a children's game where
 * you count from 1 to 20. Easy, right? Here's the catch: 
 * 
-* Instead of saying a number that is divisible by 3, say "Fizz".
-* And instead of saying a number that is divisible by 5, say "Buzz".
-* For numbers divisible by both 3 and 5, say "FizzBuzz".
+* Instead of saying a number that is divisible by 3, say "Fizz".//6
+* And instead of saying a number that is divisible by 5, say "Buzz".//10
+* For numbers divisible by both 3 and 5, say "FizzBuzz".//15
 * 
 * Print your results to the console.
 * 
