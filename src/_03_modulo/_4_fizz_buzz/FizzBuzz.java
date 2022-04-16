@@ -20,7 +20,26 @@ package _03_modulo._4_fizz_buzz;
 * 
 **/
 
+
+// you are done with Lvl 0 Module 3.  want to save it and go onto the next module?yes
 public class FizzBuzz {
-
+	public static void main(String[] args) {
+		for (int i=1; i<21; i++) {
+			//one final fix ...
+			// if # is divis by BOTH 3 and 5, print 'fizzbuzz'
+			// how should you add this to your 'if-else' decision code?
+			// try adding it... almost!  can i fix it?yes
+			// it is important to test the && first
+			if  (i % 3 == 0 && i % 5 == 0) 
+				System.out.println("fizzbuzz");
+			else if(i % 3 == 0) {
+				System.out.println("fizz");
+			}
+			else if (i % 5 == 0)
+				System.out.println("buzz");
+			else 
+				System.out.println(i);
+		}
+		
+	}
 }
-
